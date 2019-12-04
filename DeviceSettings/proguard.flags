@@ -1,3 +1,5 @@
--keep class com.aicp.device.DeviceSettings.* {
-  *;
+-keep public class com.aicp.device.DeviceSettings
+
+-keepclassmembers public class com.aicp.device.DeviceSettings {
+    *;
 }
