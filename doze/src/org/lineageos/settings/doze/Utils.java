@@ -42,8 +42,8 @@ public final class Utils {
     protected static final String CATEG_PICKUP_SENSOR = "pickup_sensor";
     protected static final String CATEG_PROX_SENSOR = "proximity_sensor";
 
-    protected static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
-    protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
+    protected static final String GESTURE_PICK_UP_KEY = "doze_tilt_gesture";
+    protected static final String GESTURE_POCKET_KEY = "doze_pocket_gesture";
 
     protected static void startService(Context context) {
         if (DEBUG) Log.d(TAG, "Starting service");
@@ -96,8 +96,8 @@ public final class Utils {
     }
 
     protected static boolean isGestureEnabled(Context context, String gesture) {
-        return PreferenceManager.getDefaultSharedPreferences(context)
-                .getBoolean(gesture, false);
+        return Settings.Secure.getInt(context.getContentResolver(),
+                gesture, 0) != 0;
     }
 
     protected static boolean isPickUpEnabled(Context context) {
