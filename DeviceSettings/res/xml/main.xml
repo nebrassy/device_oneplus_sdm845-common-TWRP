@@ -63,6 +63,7 @@
           android:summary="%s"
           android:entries="@array/notification_slider_action_entries"
           android:entryValues="@array/notification_slider_action_entry_values" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
