@@ -10,8 +10,8 @@
     "branch":      "q10.0"
   },
   {
-    "repository":  "LineageOS/android_packages_resources_devicesettings",
+    "repository":  "AICP/packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings",
-    "branch":      "lineage-17.0"
+    "branch":      "q10.0"
   }
 ]
