@@ -15,7 +15,8 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aicpextras="http://schemas.android.com/apk/res-auto">
 
     <SwitchPreference
         android:key="always_on_display"
@@ -66,6 +67,16 @@
             android:key="pulse_ambient_light_color"
             android:title="@string/pulse_ambient_light_color_title"
             android:defaultValue="0xFF3980FF"
+            android:dependency="pulse_ambient_light" />
+
+        <com.aicp.gear.preference.SystemSettingSeekBarPreference
+            android:key="pulse_ambient_light_duration"
+            android:title="@string/pulse_ambient_light_duration_title"
+            android:max="10"
+            android:min="1"
+            aicpextras:unitsLeft=""
+            aicpextras:unitsRight="sec"
+            android:defaultValue="2"
             android:dependency="pulse_ambient_light" />
 
     </PreferenceCategory>
