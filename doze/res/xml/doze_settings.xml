@@ -83,7 +83,7 @@
             android:min="1"
             aicpextras:unitsLeft=""
             aicpextras:unitsRight="sec"
-            android:defaultValue="2"
+            android:defaultValue="3"
             android:dependency="pulse_ambient_light" />
 
     </PreferenceCategory>
