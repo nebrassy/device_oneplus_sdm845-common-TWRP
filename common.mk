@@ -165,7 +165,8 @@ PRODUCT_BOOT_JARS += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.oneplus_sdm845
+    lineage.touch@1.0-service.oneplus_sdm845 \
+    TouchGestures
 
 # tri-state-key
 PRODUCT_PACKAGES += \
