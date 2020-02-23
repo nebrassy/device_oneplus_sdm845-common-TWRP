@@ -23,8 +23,7 @@
         android:disableDependentsState="true"
         android:title="@string/ambient_display_always_on_title"
         android:summary="@string/ambient_display_always_on_summary"
-        android:persistent="false"
-        android:icon="@drawable/ic_eye" />
+        android:persistent="false" />
 
     <PreferenceCategory
         android:key="pickup_sensor"
@@ -34,8 +33,7 @@
             android:key="doze_tilt_gesture"
             android:defaultValue="false"
             android:title="@string/pick_up_gesture_title"
-            android:summary="@string/pick_up_gesture_summary"
-            android:icon="@drawable/ic_pickup" />
+            android:summary="@string/pick_up_gesture_summary" />
 
     </PreferenceCategory>
 
@@ -47,8 +45,7 @@
             android:key="doze_pocket_gesture"
             android:defaultValue="false"
             android:title="@string/pocket_gesture_title"
-            android:summary="@string/pocket_gesture_summary"
-            android:icon="@drawable/ic_pocket" />
+            android:summary="@string/pocket_gesture_summary" />
 
     </PreferenceCategory>
 
@@ -60,8 +57,7 @@
             android:key="pulse_ambient_light"
             android:defaultValue="false"
             android:title="@string/pulse_ambient_light_title"
-            android:summary="@string/pulse_ambient_light_summary"
-            android:icon="@drawable/ic_lighthouse" />
+            android:summary="@string/pulse_ambient_light_summary" />
 
         <com.aicp.gear.preference.SystemSettingSwitchPreference
             android:key="pulse_ambient_light_auto_color"
