@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2020 Andoid Ice Cold Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -115,7 +116,7 @@ PRODUCT_PACKAGES += \
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-hotword.xml
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-hotword.xml
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -196,8 +197,8 @@ PRODUCT_PACKAGES += \
     JamesDSPManager
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml \
-    $(LOCAL_PATH)/configs/privapp-permissions-oneplus.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-oneplus.xml
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-oneplus.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-oneplus.xml
 
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
