@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
 
+# include oneplus settings repo
+$(call inherit-product, device/oneplus/settings/settings.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -67,10 +70,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AntHalService
 
-# AiCP Device Settings
-PRODUCT_PACKAGES += \
-    DeviceSettings
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -108,10 +107,6 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libvulkan \
     vendor.display.config@1.0
-
-# Doze
-PRODUCT_PACKAGES += \
-    OnePlusDoze
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
