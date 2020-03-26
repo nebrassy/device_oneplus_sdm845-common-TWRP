@@ -18,14 +18,14 @@
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Whether key handler sends intent when changing slider position -->
+    <string name="config_alertSliderIntent">com.aicp.device.UPDATE_SLIDER_POSITION</string>
+
     <!-- The location of the devices physical tri state switch
          0: Left side
          1: Right side -->
     <integer name="config_alertSliderLocation">1</integer>
 	    
-    <!-- Whether key handler sends intent when changing slider position -->
-    <string name="config_alertSliderIntent">org.lineageos.device.DeviceSettings.UPDATE_SLIDER_POSITION</string>
-
     <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
 
@@ -67,17 +67,11 @@
         <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
 
-    <!-- Names of the key handler classes -->
-    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>org.lineageos.device.DeviceSettings.KeyHandler</item>
-        <item>com.android.touch.gestures.KeyHandler</item>
-    </string-array>
+    <!-- Names of the key handler class -->
+    <string name="config_deviceKeyHandlerClass" translatable="false">com.aicp.device.KeyHandler</string>
 
-    <!-- Paths to the libraries that contain device specific key handlers -->
-    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
-        <item>/system/priv-app/DeviceSettings/DeviceSettings.apk</item>
-        <item>/system/priv-app/TouchGestures/TouchGestures.apk</item>
-    </string-array>
+    <!-- Paths to the library that contain device specific key handler -->
+    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/PartsBin/PartsBin.apk</string>
 
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
@@ -274,6 +268,9 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
+    <!-- Enable system navigation keys. -->
+    <bool name="config_supportSystemNavigationKeys">true</bool>
+
     <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
          if the sensor HAL correctly handles the proximity sensor as a wake-up source.
@@ -402,4 +399,7 @@
          empty string is passed in -->
     <string name="config_wlan_network_service_package">vendor.qti.iwlan</string>
 
+    <!-- Defines the sysfs attribute path used by pocket bridge
+        to communicate pocket state to the pocket judge kernel driver. -->
+    <string name="config_pocketBridgeSysfsInpocket">/sys/kernel/pocket_judge/inpocket</string>
 </resources>

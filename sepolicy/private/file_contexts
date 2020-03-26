@@ -6,9 +6,6 @@
 /op2(/.*)?       u:object_r:op2_file:s0
 /op_odm(/.*)?    u:object_r:system_file:s0
 
-# Files in sysfs
-/sys/devices/platform/soc/soc:goodix_fp/proximity_state    u:object_r:sysfs_fpc_proximity:s0
-
 # Display Modes
 /sys/devices/platform/soc/ae00000\.qcom\,mdss_mdp/drm/card0/card0-DSI-1/native_display_srgb_color_mode u:object_r:sysfs_dm:s0
 /sys/devices/platform/soc/ae00000\.qcom\,mdss_mdp/drm/card0/card0-DSI-1/hbm            u:object_r:sysfs_dm:s0
@@ -18,8 +15,6 @@
 
 # HALs
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.light@2\.0-service    u:object_r:hal_light_default_exec:s0
-/system/bin/hw/lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.oneplus_fajita    u:object_r:hal_fod_sdm845_exec:s0
-/system/bin/hw/lineage\.touch@1\.0-service\.oneplus_sdm845    u:object_r:hal_touch_sdm845_exec:s0
 
 # Vendor overlay
 /(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)?        u:object_r:vendor_configs_file:s0
@@ -32,7 +27,6 @@
 
 # Vibrator
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,haptics@c000/leds/vibrator(/.*)?           u:object_r:sysfs_vibrator:s0
-#/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,haptics@c000/leds/vibrator/vmax_override  u:object_r:sysfs_vibrator:s0
-#/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,haptics@c000/leds/vibrator/vmax_mv_user   u:object_r:sysfs_vibrator:s0
-#/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,haptics@c000/leds/vibrator/vmax_mv_call   u:object_r:sysfs_vibrator:s0
-#/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,haptics@c000/leds/vibrator/vmax_mv_strong u:object_r:sysfs_vibrator:s0
+
+# Pocket Bridge
+/sys/kernel/pocket_judge/inpocket                               u:object_r:sysfs_inpocket:s0

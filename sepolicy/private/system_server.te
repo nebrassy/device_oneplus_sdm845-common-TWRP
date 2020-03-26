@@ -1,1 +1,6 @@
 get_prop(system_server, wfd_sys_debug_prop)
+
+allow system_server sysfs_fpc_proximity:file rw_file_perms;
+
+#Pocket Bridge
+allow system_server sysfs_inpocket:file { rw_file_perms };
