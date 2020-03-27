@@ -68,10 +68,10 @@
     </string-array>
 
     <!-- Names of the key handler class -->
-    <string name="config_deviceKeyHandlerClass" translatable="false">com.aicp.device.KeyHandler</string>
+    <string name="config_customKeyHandlerClass" translatable="false">com.aicp.device.KeyHandler</string>
 
     <!-- Paths to the library that contain device specific key handler -->
-    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/PartsBin/PartsBin.apk</string>
+    <string name="config_customKeyHandlerLib" translatable="false">/system/priv-app/PartsBin/PartsBin.apk</string>
 
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
