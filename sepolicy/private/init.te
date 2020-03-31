@@ -3,8 +3,11 @@ allow init vendor_configs_file:dir mounton;
 
 # Allow init to chown/chmod on pseudo files in /sys
 allow init {
+    proc_touchpanel
+    sysfs_audio_gain
     sysfs_fpc_proximity
     sysfs_graphics
+    sysfs_inpocket
 }:file { open read setattr };
 
 # Allow init to write to otg_switch
