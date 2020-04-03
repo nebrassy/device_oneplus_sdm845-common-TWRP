@@ -58,4 +58,36 @@
     <string name="pathGestureM">/proc/touchpanel/letter_m_enable</string>
     <string name="pathGestureS">/proc/touchpanel/letter_s_enable</string>
     <string name="pathGestureW">/proc/touchpanel/letter_w_enable</string>
+
+    <!-- Device earpiece gain sysfs -->
+    <string name="pathAudioEarpieceGain">/sys/kernel/sound_control/earpiece_gain</string>
+
+    <!-- Device earpiece gain min-max-default values -->
+    <integer name="audioEarpieceMin">-10</integer>
+    <integer name="audioEarpieceMax">20</integer>
+    <integer name="audioEarpieceDefault">0</integer>
+
+    <!-- Device audio mic gain sysfs -->
+    <string name="pathAudioMicGain">/sys/kernel/sound_control/mic_gain</string>
+
+    <!-- Device audio mic min-max-default values -->
+    <integer name="audioMicGainMin">-10</integer>
+    <integer name="audioMicGainMax">20</integer>
+    <integer name="audioMicGainDefault">0</integer>
+
+    <!-- Device audio headphone gain sysfs -->
+    <string name="pathAudioHeadphoneGain">/sys/kernel/sound_control/headphone_gain</string>
+
+    <!-- Device audio headphone min-max-default values -->
+    <integer name="audioHeadphoneGainMin">-60</integer>
+    <integer name="audioHeadphoneGainMax">20</integer>
+    <integer name="audioHeadphoneGainDefault">0</integer>
+
+    <!-- Device audio speaker gain sysfs -->
+    <string name="pathAudioSpeakerGain">/sys/kernel/sound_control/speaker_gain</string>
+
+    <!-- Device audio speaker min-max-default values -->
+    <integer name="audioSpeakerGainMin">0</integer>
+    <integer name="audioSpeakerGainMax">6</integer>
+    <integer name="audioSpeakerGainDefault">3</integer>
 </resources>
