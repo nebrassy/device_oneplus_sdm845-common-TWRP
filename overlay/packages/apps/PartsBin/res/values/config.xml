@@ -59,6 +59,9 @@
     <string name="pathGestureS">/proc/touchpanel/letter_s_enable</string>
     <string name="pathGestureW">/proc/touchpanel/letter_w_enable</string>
 
+    <!-- Path to devices single-tap toggle file -->
+    <string name="pathSTapToggle">/proc/touchpanel/single_tap_enable</string>
+
     <!-- Device earpiece gain sysfs -->
     <string name="pathAudioEarpieceGain">/sys/kernel/sound_control/earpiece_gain</string>
 
