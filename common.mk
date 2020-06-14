@@ -36,8 +36,6 @@ PRODUCT_PACKAGES += \
     OnePlusIconShapeTeardropOverlay
 
 # Properties
--include $(LOCAL_PATH)/system_prop.mk
-
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # VNDK
