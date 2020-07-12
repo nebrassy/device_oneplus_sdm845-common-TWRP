@@ -101,5 +101,8 @@ persist.vendor.data.mode=concurrent
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# USAP
+persist.device_config.runtime_native.usap_pool_enabled=true
+
 # Vendor
 ro.vendor.qti.va_aosp.support=1
