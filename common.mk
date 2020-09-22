@@ -110,6 +110,10 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.0
 
+# DPM
+PRODUCT_PACKAGES += \
+    libshim_dpmframework
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \

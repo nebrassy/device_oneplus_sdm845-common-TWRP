@@ -40,6 +40,7 @@ function blob_fixup() {
         ;;
     product/lib64/libdpmframework.so)
         sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "${2}"
+        patchelf --add-needed "libshim_dpmframework.so" "${2}"
         ;;
     esac
 }
