@@ -120,6 +120,10 @@ BOARD_ROOT_EXTRA_FOLDERS := op1 op2 op_odm
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/product/lib64/libdpmframework.so|libshim_dpmframework.so
+
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
 
