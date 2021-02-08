@@ -34,3 +34,6 @@
 
 # Pocket Bridge
 /sys/kernel/pocket_judge/inpocket                               u:object_r:sysfs_inpocket:s0
+
+/mnt/vendor/persist/wlan_mac.bin                                   u:object_r:mnt_vendor_file:s0
+
