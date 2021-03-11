@@ -102,6 +102,20 @@ on boot
     chown system system /sys/kernel/sound_control/speaker_gain
     chmod 0666 /sys/kernel/sound_control/speaker_gain
 
+    # Battery Health
+    chown system system /sys/class/power_supply/bms/charge_full
+    chmod 0644 /sys/class/power_supply/bms/charge_full
+    chown system system /sys/class/power_supply/bms/charge_full_design
+    chmod 0644 /sys/class/power_supply/bms/charge_full_design
+    chown system system /sys/class/power_supply/bms/cycle_count
+    chmod 0644 /sys/class/power_supply/bms/cycle_count
+    chown system system /sys/class/power_supply/bms/charge_counter
+    chmod 0644 /sys/class/power_supply/bms/charge_counter
+    chown system system /sys/class/power_supply/bms/battery_health
+    chmod 0644 /sys/class/power_supply/bms/battery_health
+    chown system system /sys/class/power_supply/bms/battery_type
+    chmod 0644 /sys/class/power_supply/bms/battery_type
+
 on charger
     write /sys/class/backlight/panel0-backlight/brightness 150
 

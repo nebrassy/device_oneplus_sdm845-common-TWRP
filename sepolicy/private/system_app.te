@@ -1,4 +1,6 @@
 allow system_app sysfs_audio_gain:file rw_file_perms;
+allow system_app sysfs_battery_supply:dir { search };
+allow system_app sysfs_battery_supply:file { r_file_perms };
 allow system_app sysfs_dm:file rw_file_perms;
 allow system_app sysfs_vibrator:file rw_file_perms;
 allow system_app sysfs_vibrator:dir r_dir_perms;
