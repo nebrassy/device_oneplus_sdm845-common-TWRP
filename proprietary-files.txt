@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from OnePlus6Oxygen_22_OTA_042_all_1912142031_0fb330
+# All unpinned blobs below are extracted from OnePlus6Oxygen_22.J.53_OTA_053_all_2104202241_ecefb
 
 # ANT+
 -lib/libantradio.so
@@ -39,7 +39,7 @@ product/lib64/libdpmtcm.so
 
 # IMS
 lib64/libdiag_system.so
--product/priv-app/ims/ims.apk|4161acfa23df5ed8c095754e325f48d0f6968c6e
+-product/priv-app/ims/ims.apk|57fb9daf1aad6a4cdf3167f8ced1479223dc624d9
 product/lib64/libimscamera_jni.so
 product/lib64/libimsmedia_jni.so
 product/lib64/lib-imsvideocodec.so
@@ -58,7 +58,7 @@ lib64/libmmosal.so
 # NFC
 -app/NxpNfcNci/NxpNfcNci.apk|e95e8662ce32a305dfca8d9ee932dd6cfb0ee034
 -app/NxpSecureElement/NxpSecureElement.apk
-etc/nfcee_access.xml|6621fa1927720008fc0bdf47d259b18c871c2c79
+etc/nfcee_access.xml
 etc/permissions/com.nxp.nfc.xml
 framework/com.nxp.nfc.jar|41d92d0b7fdc3d50cd6ea4be8664614aa9d41823
 lib64/libnxpnfc_nci_jni.so
