@@ -14,9 +14,5 @@
   {
     "repository":  "AICP/device_oneplus_settings",
     "target_path": "device/oneplus/settings"
-  },
-  {
-    "repository":  "AICP/packages_resources_deviceparts",
-    "target_path": "packages/resources/deviceparts"
   }
 ]
