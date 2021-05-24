@@ -38,7 +38,8 @@ PRODUCT_PACKAGES += \
     OnePlusIconShapeRoundedRectOverlay \
     OnePlusIconShapeSquareOverlay \
     OnePlusIconShapeSquircleOverlay \
-    OnePlusIconShapeTeardropOverlay
+    OnePlusIconShapeTeardropOverlay \
+    TelephonyResCommon
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
