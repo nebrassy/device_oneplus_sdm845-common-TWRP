@@ -4,10 +4,6 @@
     "target_path": "kernel/oneplus/sdm845"
   },
   {
-    "repository":  "Claymore1297/proprietary_vendor_oneplus",
-    "target_path": "vendor/oneplus"
-  },
-  {
     "repository":  "AICP/device_oneplus_settings",
     "target_path": "device/oneplus/settings"
   }
